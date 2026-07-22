@@ -25,6 +25,18 @@ This project explores the relationship between dining context, customer behavior
 
 The project is organized as a Jupyter notebook analysis with a README summary. The notebook contains the complete workflow from exploration through modeling and evaluation.
 
+## Architecture Diagram
+
+```mermaid
+flowchart LR
+  Data["Restaurant Tip Dataset"] --> Notebook["Jupyter Analysis Notebook"]
+  Notebook --> EDA["Exploratory Analysis"]
+  EDA --> Features["Feature Preparation"]
+  Features --> Model["Regression Modeling"]
+  Model --> Diagnostics["Statistical Diagnostics"]
+  Diagnostics --> Insights["Tip Prediction Insights"]
+```
+
 ## Technology Stack
 
 - Python notebook workflow.
