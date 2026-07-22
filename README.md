@@ -1,41 +1,54 @@
 # Restaurant Tip Prediction and Regression Analysis
 
-This repository contains an end-to-end machine learning pipeline designed to analyze restaurant tipping behavior and predict tip amounts based on various customer and dining attributes. Using the popular `tips` dataset, the project walks through data preprocessing, exploratory data analysis (EDA), statistical diagnostic testing, and the benchmarking of multiple regression algorithms to identify the most accurate predictive model.
+<p align="center">
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge" />
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge" />
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge" />
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge" />
+  <img alt="Data Science" src="https://img.shields.io/badge/Data%20Science-1F77B4?style=for-the-badge" />
+</p>
 
----
+<p align="center">
+  <strong>A regression-analysis workflow for modeling restaurant tip behavior from dining attributes and statistical diagnostics.</strong>
+</p>
 
-## **Key Features and Workflow**
+This project explores the relationship between dining context, customer behavior, and tip amount through a notebook-based machine learning workflow. It emphasizes data understanding, model selection, diagnostics, and interpretation.
 
-* **Data Preprocessing:** Cleans and formats the data by mapping categorical variables (e.g., Sex, Smoker status, Meal time) into machine-readable numerical formats using encoding techniques.
-* **Exploratory Data Analysis (EDA):** Leverages `seaborn` and `matplotlib` to visualize relationships within the data. This includes pair plots for variable distributions, correlation heatmaps to identify multicollinearity, and box plots analyzing tip amounts across different days of the week.
-* **Statistical Diagnostics:** * Performs the **Linear Rainbow Test** via `statsmodels` to check the underlying assumption of linearity in the dataset.
-* Generates a **Residuals Plot** (fitted values vs. residuals) with a LOWESS smoothing line to visually assess homoscedasticity and model fit for standard linear regression.
+## Core Capabilities
 
+- Loads and analyzes restaurant tipping data in a reproducible notebook.
+- Builds regression models for tip prediction.
+- Evaluates model behavior through statistical and visual diagnostics.
+- Documents insights around feature impact and prediction quality.
 
-* **Model Benchmarking:** Splits the data into training and testing sets (80/20) and evaluates seven different machine learning regression models:
-* Linear Regression
-* Ridge Regression
-* Lasso Regression
-* Decision Tree Regressor
-* Random Forest Regressor
-* Support Vector Regressor (SVR)
-* K-Nearest Neighbors (KNN) Regressor
+## Technical Architecture
 
+The project is organized as a Jupyter notebook analysis with a README summary. The notebook contains the complete workflow from exploration through modeling and evaluation.
 
-* **Performance Evaluation:** Compares models based on standard regression metrics: **R² Score**, Mean Absolute Error (**MAE**), and Mean Squared Error (**MSE**).
-* **Feature Importance Analysis:** Utilizes a Random Forest Regressor to extract, rank, and plot the relative importance of each feature in predicting the final tip amount.
+## Technology Stack
 
----
+- Python notebook workflow.
+- Pandas and NumPy for data handling.
+- scikit-learn style regression workflow.
+- Visualization and statistical diagnostics for interpretation.
 
-## **Key Findings**
+## Repository Structure
 
-Based on the evaluation metrics, **Support Vector Regression (SVR)** with an RBF kernel outperformed the other algorithms, achieving the highest R² Score (~0.569) and the lowest Mean Absolute Error (~0.570) for this specific dataset.
+- `DAI_assignment2(23411030).ipynb` - End-to-end restaurant tip prediction notebook.
+- `README.md` - Project documentation.
 
----
+## Getting Started
 
-## **Technologies & Libraries Used**
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+```
 
-* **Data Manipulation:** `pandas`, `numpy`
-* **Data Visualization:** `matplotlib`, `seaborn`
-* **Machine Learning:** `scikit-learn`
-* **Statistical Modeling:** `statsmodels`
+```bash
+jupyter notebook
+```
+
+## Professional Context
+
+This project demonstrates practical regression analysis, notebook communication, and data-driven reasoning for behavioral prediction.
